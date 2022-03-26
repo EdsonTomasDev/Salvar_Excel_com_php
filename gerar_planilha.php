@@ -9,6 +9,14 @@
 <body>
     <?php
 
+    require_once 'conexao.php';
+
+    $banco = new db();
+
+    $link = $banco->conecta_mysql();
+
+
+
     //DEFINE O NOME DO ARQUIVO
     $arquivo = 'msgcontatos.xls';
 
